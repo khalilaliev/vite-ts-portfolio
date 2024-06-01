@@ -1,4 +1,4 @@
-import mapboxgl, { Map } from "mapbox-gl";
+import mapboxgl from "mapbox-gl";
 
 mapboxgl.accessToken =
   "pk.eyJ1Ijoia2hhbGlsYWxpZXYiLCJhIjoiY2x3ODBhdWR5MXp1MDJscGR0eGgxMXh2aSJ9.ppOwu4hFatGJKjiMFvoDZA";
