@@ -18,10 +18,10 @@ class MapInit {
 
   setupMap(container: string): Map {
     return new mapboxgl.Map({
-      container: container, // container I
-      style: "mapbox://styles/mapbox/light-v11", // style URL
-      center: [-74.5, 40], // starting position [lng, lat]
-      zoom: 9, // starting zoom
+      container: container,
+      style: "mapbox://styles/mapbox/light-v11",
+      center: [-74.5, 40],
+      zoom: 9,
     });
   }
 }
