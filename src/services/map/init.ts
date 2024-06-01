@@ -8,7 +8,7 @@ class MapInit {
 
   constructor(idContainer: string) {
     this._map = this.setupMap(idContainer);
-    this.flyToCoordinates([8.725689367209213, 47.50045980431281], 13);
+    // this.flyToCoordinates([8.725689367209213, 47.50045980431281], 13);
   }
 
   get map(): mapboxgl.Map {
@@ -18,9 +18,9 @@ class MapInit {
   setupMap(container: string): mapboxgl.Map {
     return new mapboxgl.Map({
       container: container,
-      style: "mapbox://styles/mapbox/dark-v11",
-      center: [0, 0], // Установите временный центр карты
-      zoom: 1, // Установите временный зум
+      style: "mapbox://styles/mapbox/light-v11",
+      center: [8.725689367209213, 47.50045980431281],
+      zoom: 8,
     });
   }
 
@@ -28,7 +28,7 @@ class MapInit {
     this._map.flyTo({
       center: coordinates,
       zoom: zoom,
-      essential: true, // Это гарантирует, что анимация будет выполнена, даже если вкладка не активна
+      essential: true,
     });
   }
 }

@@ -2,7 +2,16 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    extend: {
+      colors: {
+        gray: {
+          100: "#f7f7f7",
+        },
+      },
+    },
   },
   plugins: [require("rippleui")],
 };
